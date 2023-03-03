@@ -7,3 +7,49 @@ body {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif !important;
 }
+
+.link {
+    color: #BF9444 !important;
+}
+
+nav .nav-link.active {
+    color: #BF9444 !important;
+}
+
+nav .nav-link {
+    font-weight: 500;
+    color: #222 !important;
+}
+
+.btn {
+    padding: 10px 30px;
+    border-radius: 0%;
+    background-color: #BF9444;
+    border-color: #BF9444;
+    transition: .3s ease-in;
+    box-shadow: none !important;
+}
+
+.btn:hover {
+    background-color: #222;
+    border-color: #222;
+}
+
+/* media queries */
+
+@media screen and (max-width: 717px) {
+    header small {
+        font-size: .7rem;
+    }
+
+    header .row {
+        text-align: center;
+    }
+
+    header .float-end {
+        float: unset !important;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+}

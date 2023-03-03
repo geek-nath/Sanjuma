@@ -11,22 +11,110 @@
 
         <!-- custom css link -->
         <link rel="stylesheet" href="style.css">
+
+        <!-- font awsome css link -->
+        <link rel="stylesheet" href="assets/fontawesome-free-6.3.0-web/css/all.min.css">
     </head>
 
     <body>
         <!-- header -->
         <header>
             <!-- basic info -->
-            <div class="basic info p-2 container">
+            <div class="basic info p-2 container bg-white">
                 <div class="row">
                     <div class="col-md-6">
+                        <div class="text-dark">
+                            <small>
+                                Welcome to Sanjuma! <a href="" class="link ms-1 text-capitalize">For private entry</a>
+                            </small>
+                        </div>
+                    </div>
 
+                    <div class="col-md-6">
+                        <div class="float-end">
+                            <div class="d-flex flex-row gap-3">
+                                <div>
+                                    <small>
+                                        <a href="" class="link">
+                                            <i class="far fa-envelope me-2"></i> info@example.com
+                                        </a>
+                                    </small>
+                                </div>
+
+                                <div>
+                                    <small>
+                                        <a href="" class="link">
+                                            <i class="fas fa-map-marker-alt me-2"></i> Road-01, Block-B, West London City
+                                        </a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- navbar -->
+            <nav class="navbar navbar-expand-lg border-top pt-3 pb-3 navbar-light bg-white">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/Images/brand.png" width="150" alt="brand">
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav d-flex flex-row gap-4 me-auto ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Menu
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Articles</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <a href="" class="text-decoration-none">
+                            <button class="btn btn-primary">
+                                Find Reservation
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </nav>
         </header>
 
         <!-- bootstrap scripts -->
         <script src="assets/js/bootstrap.min.js"></script>
+        <!-- font awsome script -->
+        <script src="assets/fontawesome-free-6.3.0-web/js/all.min.js"></script>
     </body>
 </html>
