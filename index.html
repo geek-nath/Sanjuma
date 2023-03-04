@@ -9,6 +9,9 @@
         <!-- animate css link -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
+        <!-- AOS CSS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
         <!-- boostrap css link -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
@@ -59,7 +62,7 @@
         </header>
 
         <!-- navbar -->
-        <nav class="navbar w-100 sticky-top navbar-expand-lg border-top pt-3 pb-3 navbar-light bg-white">
+        <nav id="navbarContainer" class="navbar w-100 sticky-top navbar-expand-lg border-top pt-3 pb-3 navbar-light bg-white">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="assets/Images/brand.png" width="150" alt="brand">
@@ -138,13 +141,113 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="intro_text">
+                            <div class="intro_text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-offset="200">
                                 <h5>Sanjuma's Introduction</h5>
                                 <h1>To Take Healthy Food</h1>
 
                                 <p class="mt-3">
                                     It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                                 </p>
+
+                                <div class="mt-3">
+                                    <ul class="d-grid gap-3">
+                                        <li>Delicious Food</li>
+                                        <li>Cost Effective</li>
+                                        <li>Qaulity Food</li>
+                                        <li>Expert Chef</li>
+                                        <li>Restaurant Sheets</li>
+                                        <li>Quality Food</li>
+                                    </ul>
+                                </div>
+
+                                <div class="mt-4">
+                                    <h5>Our Achivements</h5>
+
+                                    <div class="mt-3 achivements d-flex gap-2">
+                                        <div>
+                                            <img src="assets/Images/Award-01.svg" width="50" alt="award img">
+                                        </div>
+
+                                        <div>
+                                            <img src="assets/Images/Award-02.svg" width="50" alt="award img">
+                                        </div>
+
+                                        <div>
+                                            <img src="assets/Images/Award-03.svg" width="50" alt="award img">
+                                        </div>
+
+                                        <div>
+                                            <img src="assets/Images/Award-04.svg" width="50" alt="award img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 h-100 d-flex justify-content-center align-items-center">
+                            <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="500" data-aos-offset="200">
+                                <img src="assets/Images/h3-intro-big.png" width="80%" alt="chef image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="facilities">
+                <div class="container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-offset="200">
+                    <h5 class="text-center">
+                        Our Facilities 
+                    </h5>
+                    <h1 class="text-center">Sanjuma's Facilities</h1>
+
+                    <div class="mt-5">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card p-4 border rounded-0">
+                                    <div class="text-center">
+                                        <h5 class="fs-3">Our Capacity</h5>
+
+                                        <div class="mt-3">
+                                            <img src="assets/Images/fac-1.jpg" class="rounded-circle shadow-sm" alt="facilities">
+                                        </div>
+
+                                        <div class="mt-3 fs-5 text-muted">
+                                            Almost 300 people could have a comfortabel parking space and eating sit.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card p-4 border rounded-0">
+                                    <div class="text-center">
+                                        <h5 class="fs-3">Kids Zone</h5>
+
+                                        <div class="mt-3">
+                                            <img src="assets/Images/fac-2.jpg" class="rounded-circle shadow-sm" alt="facilities">
+                                        </div>
+
+                                        <div class="mt-3 fs-5 text-muted">
+                                            Almost 300 people could have a comfortabel parking space and eating sit.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card p-4 border rounded-0">
+                                    <div class="text-center">
+                                        <h5 class="fs-3">Free Wifi</h5>
+
+                                        <div class="mt-3">
+                                            <img src="assets/Images/fac-3.jpg" class="rounded-circle shadow-sm" alt="facilities">
+                                        </div>
+
+                                        <div class="mt-3 fs-5 text-muted">
+                                            Almost 300 people could have a comfortabel parking space and eating sit.
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -158,5 +261,12 @@
         <script src="assets/fontawesome-free-6.3.0-web/js/all.min.js"></script>
         <!-- custome js script -->
         <script src="main.js"></script>
+        <!-- AOS JavaScript -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            // initialization of aos
+            AOS.init();
+        </script>
     </body>
 </html>
